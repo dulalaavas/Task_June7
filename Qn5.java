@@ -27,18 +27,19 @@ class Rectangle extends Shape {
 
 class Circle extends Shape {
     double radius;
+    final double PI = 3.1416; // Using a fixed value for pi
 
     Circle(double r) {
         radius = r;
     }
 
     void calculateArea() {
-        area = Math.PI * radius * radius;
+        area = PI * radius * radius;
         System.out.println("Circle Area: " + area);
     }
 
     void calculateCircumference() {
-        double circumference = 2 * Math.PI * radius;
+        double circumference = 2 * PI * radius;
         System.out.println("Circle Circumference: " + circumference);
     }
 }
